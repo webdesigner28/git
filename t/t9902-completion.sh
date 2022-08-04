@@ -2496,6 +2496,7 @@ test_expect_success 'git config - variable name' '
 	test_completion "git config log.d" <<-\EOF
 	log.date Z
 	log.decorate Z
+	log.decorateFilter Z
 	log.diffMerges Z
 	EOF
 '
@@ -2524,6 +2525,7 @@ test_expect_success 'git -c - variable name' '
 	test_completion "git -c log.d" <<-\EOF
 	log.date=Z
 	log.decorate=Z
+	log.decorateFilter=Z
 	log.diffMerges=Z
 	EOF
 '
@@ -2546,6 +2548,7 @@ test_expect_success 'git clone --config= - variable name' '
 	test_completion "git clone --config=log.d" <<-\EOF
 	log.date=Z
 	log.decorate=Z
+	log.decorateFilter=Z
 	log.diffMerges=Z
 	EOF
 '
